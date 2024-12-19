@@ -16,3 +16,19 @@ body {
 textarea {
   height: 250px;
 }
+
+.jinja-msg {
+  text-align: center;
+}
+
+.ul-storage-msg {
+  list-style-type: none;
+  padding: 0;
+}
+
+.li-storage-msg {
+  border: solid 1px black;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 15px;
+}

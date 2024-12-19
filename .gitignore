@@ -1,0 +1,59 @@
+.DS_Store
+DS_Store/
+
+
+# Node.js
+node_modules/
+
+# Editor directories and files
+.vscode/
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# MacOS
+*.swp
+*~
+
+# JetBrains (IDE)
+.idea/
+
+# Log files
+*.log
+
+# Build output
+/dist
+/build
+/out
+
+# Package distribution
+*.tgz
+*.tar.gz
+
+# Dependency directories
+bower_components/
+
+# Environment files
+.env
+env/
+venv/
+.venv
+
+postgresdata/
+postgres-data/venv/

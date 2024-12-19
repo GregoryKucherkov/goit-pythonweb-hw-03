@@ -1,1 +1,18 @@
-{}
+{
+    "2024-12-19 15:34:52": {
+        "username": "Fedir",
+        "message": "Hello my friend!"
+    },
+    "2024-12-19 15:35:07": {
+        "username": "Andrew",
+        "message": "How are you?"
+    },
+    "2024-12-19 15:49:21": {
+        "username": "\u041f\u0435\u0442\u0440\u043e",
+        "message": "\u0421\u043a\u0456\u043b\u044c\u043a\u0438 \u043a\u043e\u0448\u0442\u0443\u0454 \u043a\u0443\u0440\u0441 \u0414\u0430\u0442\u0430 \u0441\u0430\u0435\u043d\u0441?"
+    },
+    "2024-12-19 16:40:07": {
+        "username": "Johny",
+        "message": "How big is IT salary?"
+    }
+}

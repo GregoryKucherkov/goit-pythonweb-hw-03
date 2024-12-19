@@ -29,10 +29,10 @@
                 <a class="nav-link active" aria-current="page" href="/">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Send message</a>
+                <a class="nav-link" href="/message.html">Send message</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/storage.html">Check messages</a>
+                <a class="nav-link" href="">Check messages</a>
               </li>
             </ul>
           </div>
@@ -41,33 +41,20 @@
     </header>
     <div class="container mt-3">
       <main class="form-signin w-50 m-auto">
-        <form action="/message" method="POST">
-          <h1 class="h3 mb-3 fw-normal">Please send me message</h1>
-
-          <div class="row mb-3">
-            <label for="floatingInput">Your nickname</label>
-            <input
-              type="text"
-              class="form-control"
-              id="floatingInput"
-              name="username"
-            />
-          </div>
-
-          <div class="row mb-3 h-100">
-            <label for="floatingTextarea">Message</label>
-            <textarea
-              class="form-control"
-              id="floatingTextarea"
-              name="message"
-              required
-            ></textarea>
-          </div>
-
-          <button class="w-100 btn btn-lg btn-primary" type="submit">
-            Send
-          </button>
-        </form>
+        {% if no_messages %}
+        <h2 class="jinja-msg">No messages available.</h2>
+        {% else %}
+        <h2 class="jinja-msg">Messages</h2>
+        <ul class="ul-storage-msg">
+          {% for timestamp, msg in messages.items() %}
+          <li class="li-storage-msg">
+            Time: {{ timestamp }}<br />
+            Username: {{ msg.username }}<br />
+            Message: {{ msg.message }}<br />
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
       </main>
     </div>
   </body>
